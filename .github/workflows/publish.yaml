@@ -17,6 +17,12 @@ jobs:
         run: |
           curl -sSf https://rye.astral.sh/get | RYE_VERSION="0.32.0" RYE_INSTALL_OPTION="--yes" bash
           echo "$HOME/.rye/shims" >> $GITHUB_PATH
+      - name: Set up Rye
+        uses: eifinger/setup-rye@v3
+      - name: Patch Rye
+        run: |
+          echo "Patching Rye with Twine 5.1.1"
+          $RYE_HOME/self/bin/pip install twine==5.1.1
       - name: Install dependencies
         run: rye pin 3.10 && rye sync
       - name: Build package
