@@ -13,11 +13,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.x"
-      - name: Install Rye
-        run: |
-          curl -sSf https://rye.astral.sh/get | RYE_VERSION="0.32.0" RYE_INSTALL_OPTION="--yes" bash
-          echo "$HOME/.rye/shims" >> $GITHUB_PATH
-      - name: Set up Rye
+      - name: Setup Rye
         uses: eifinger/setup-rye@v3
       - name: Patch Rye
         run: |
