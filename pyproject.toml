@@ -1,11 +1,13 @@
 [project]
 name = "geotest"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.0.1"
+description = "This is a test package for automated package deployment using github actions"
 authors = [
     { name = "geovicco-dev", email = "geovicco.dev@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "typer>=0.12.3",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
