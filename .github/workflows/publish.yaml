@@ -26,4 +26,4 @@ jobs:
           PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: |
-          rye publish -q --username $PYPI_USERNAME --token $PYPI_PASSWORD
+          echo -n "$PYPI_PASSWORD" | rye publish -q --username $PYPI_USERNAME --token $(</dev/stdin)
