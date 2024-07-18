@@ -1,6 +1,6 @@
 [project]
 name = "geotest"
-version = "0.0.1"
+version = "0.0.3"
 description = "This is a test package for automated package deployment using github actions"
 authors = [
     { name = "geovicco-dev", email = "geovicco.dev@gmail.com" }
@@ -10,6 +10,7 @@ dependencies = [
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
+license = "MIT"
 
 [build-system]
 requires = ["hatchling"]
