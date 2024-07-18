@@ -5,12 +5,12 @@ description = "This is a test package for automated package deployment using git
 authors = [
     { name = "geovicco-dev", email = "geovicco.dev@gmail.com" }
 ]
+license = "MIT"
 dependencies = [
     "typer>=0.12.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
-license = "MIT"
 
 [build-system]
 requires = ["hatchling"]
