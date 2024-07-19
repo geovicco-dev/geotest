@@ -1,6 +1,6 @@
 [project]
 name = "geotest"
-version = "0.0.6"
+version = "0.0.5"
 description = "This is a test package for automated package deployment using github actions"
 authors = [
     { name = "geovicco-dev", email = "geovicco.dev@gmail.com" }
