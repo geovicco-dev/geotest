@@ -13,6 +13,10 @@ def ask_age() -> int:
 @app.command()
 def year_born(age: int = typer.Argument(ask_age)):
     typer.echo(f"You were born in {date.today().year - age}")
+    
+@app.command()
+def age_today(age: int = typer.Argument(ask_age)):
+    typer.echo(f"You are {age} years old today")
 
 def main():
     app()
